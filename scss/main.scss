@@ -6,22 +6,23 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    color: white;
+    font-size: 16px;
+    background-color: #f8f9fa;
 }
 .dashboard {
     width: 100vw;
     display:flex;
+    flex-direction: row;
     color: #868e96;
     &__sidebar {
         position: fixed;
-        width: 19.5%;
-        padding: 0 1.25rem;
+        width: 19.5vw;
+        padding: 0 20px;
         padding-bottom: 100%;
         background-color: #3e4551;
         .sidebar__logo {
             margin: 1em 0;
-            @include font(600, 1.5rem, 1.8125rem);
+            @include font(600, 24px, 29px);
             color: #1eb7ff;
         }
         .sidebar__user-profile {
@@ -30,34 +31,34 @@ body {
             margin-bottom: 4em;
             .user-profile__avatar {
                 position: relative;
-                margin-bottom: 1.25rem;
+                margin-bottom: 20px;
                 img {
                     border-radius: 50%;
-                    width: 3.75rem;
-                    height: 3.75rem;
+                    width: 60px;
+                    height: 60px;
                 }
                 .status {
                     position: absolute;
-                    left: 3.125rem;
-                    bottom: 0.3125rem;
-                    width: 0.9375rem;
-                    height: 0.9375rem;
+                    left: 50px;
+                    bottom: 5px;
+                    width: 15px;
+                    height: 15px;
                     background-color: green;
-                    border: 0.1875rem solid #3e4551;
+                    border: 3px solid #3e4551;
                     border-radius: 50%;
                 }
             }
             h3 {
-                @include font(400, 0.875rem, 1.3125rem);
+                @include font(400, 14px, 21px);
                 i {
-                    font-size: 0.625rem; 
-                    margin-left: 0.625rem;
+                    font-size: 10px; 
+                    margin-left: 10px;
                     color: inherit;
                 }
             }
             .settings {
                 position: absolute;
-                border-radius: 0.3125rem;
+                border-radius: 5px;
                 transition: transform .2s, opacity .2s;
                 transform-origin: top left;
                 transform: scale(0);
@@ -65,8 +66,8 @@ body {
                 display: flex;
                 flex-direction: column;
                 text-align: baseline;
-                border: 0.0625rem solid #DEE2E6;
-                @include font(400, 0.875rem, 1.375rem);           ;
+                border: 1px solid #DEE2E6;
+                @include font(400, 14px, 22px);           ;
                 &__item {
                     display: block;
                     width: 100%;
@@ -86,15 +87,15 @@ body {
                     }
                 }
                 &__item--head {
-                    border-bottom: 0.0625rem solid #DEE2E6;
+                    border-bottom: 1px solid #DEE2E6;
                     padding: 0.7em 2em .7em 2em;
                 }
                 &__item--footer {
-                    border-top: 0.0625rem solid #DEE2E6;
+                    border-top: 1px solid #DEE2E6;
                 }
             }
             .settings--open {
-                border-radius: 0.3125rem;
+                border-radius: 5px;
                 color: #3e4551;
                 background: white;
                 transform: scale(1); 
@@ -102,7 +103,7 @@ body {
                 z-index: 99;
             }
             h6 {
-                @include font(400, 0.75rem, 1.1875rem);
+                @include font(400, 12px, 19px);
                 color: inherit;
                 position: static;
             }
@@ -111,7 +112,7 @@ body {
                 width: 100%;
                 height: 33vh;
                 overflow: scroll;
-                transform: translateX(-1.25rem);
+                transform: translateX(-20px);
                 .accordion {
                     .card {
                         background-color: transparent;
@@ -121,13 +122,13 @@ body {
                             border-bottom: none;
                             padding: 0;
                             &.active {
-                                border-left: 3px solid lightblue;
+                                border-left: 0.1875rem solid lightblue;
                             }
                             h2 {
                                 color: inherit;
                                 margin-left: 1em;
                                 .btn {
-                                    @include font(400, 0.875rem, 1.375rem);
+                                    @include font(400, 14px, 22px);
                                     color: inherit;
                                     padding: 0;
                                     i {
@@ -147,7 +148,7 @@ body {
                              
                         }
                         .card-body {
-                            padding: 0.625rem 0;
+                            padding: 10px 0;
                             margin: 0;
                             color: inherit;
                             
@@ -156,11 +157,11 @@ body {
                                 margin-bottom: 0;
                                 padding-inline-start: 0;
                                 li {
-                                    @include font(400, 0.875rem, 1.375rem);
-                                    padding: 0.3125rem 0;
+                                    @include font(400, 14px, 22px);
+                                    padding: 5px 0;
                                     &.active {
-                                        border-left: 3px solid lightblue;
-                                        margin-left: calc(3em -3px);
+                                        border-left: 0.1875rem solid lightblue;
+                                        margin-left: calc(3em -0.1875rem);
                                     }
                                     a {
                                         margin-left: 3em;
@@ -182,16 +183,111 @@ body {
     }  
     .footer {
         position: fixed;
-        bottom: 20px;
+        bottom: 1.25rem;
         left: 0;
         width: 19.5vw;
-        padding: 0 1.5rem;
-        @include font(400, 12px, 19px);
+        padding: 0 24px;
+        @include font(400, 0.75rem, 1.1875rem);
     }    
     } 
 
     &__content {
-        width: 80.5%;
-        background-color: #f8f9fa;
+        width: 80.5vw;
+        margin-left: 19.5vw;
+        overflow: hidden;
+        &__top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 10vh;
+            text-align: center;
+            .menu-toggle {
+                width: 5%;
+            }
+            .bread-crumbs {
+                width: 85%;
+                padding: 0;
+                .breadcrumb {
+                    @include font(400, 0.875rem, 1.375rem);
+                    padding: 0;
+                    margin-bottom: 0;
+                    background-color: transparent;
+                    &-item {
+                        a {
+                            text-decoration: none;
+                            color: #1f2d3d;
+                        }
+                    }
+                }
+            }
+            .notifications {
+                width: 10%;                
+                display: inline-flex;
+                justify-content: space-evenly;
+                flex: 1;
+            }
+        }
+        &__monitor {
+            @include wrapper;
+            .heading {
+                @include font(100, 3.125rem, 3.75rem);
+                color: #353c48;
+                margin-bottom: 1.5em;
+            }
+            .monitor {
+                display: flex; 
+                flex-wrap: nowrap; 
+                overflow-x: scroll;
+                width: 97%;
+                .card {
+                    width: 12.5rem;
+                    height: 12.5rem;
+                    flex: 0 0 auto;
+                    margin-right: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: white;
+                    .top {
+                        margin: 0 auto;
+                        margin-top: 1em;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        .left {
+                            .info-sub {
+                                color: #1f2d3d;
+                                .h6 {
+                                    @include font(400, 0.875rem, 1.375rem);
+                                }
+                                .number {
+                                    @include font(400, 2rem, 2.375rem);
+                                }
+                            }
+                        }
+                        .right {
+                            margin-left: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        &__text {
+            @include wrapper;
+            h3 {
+                @include font(400, 14px, 17px);
+                color: #353c48;
+            }
+            p {
+                @include font(400, 14px, 22px);
+                color: #8493a5;
+            }
+        }
+        
+
     }     
 }

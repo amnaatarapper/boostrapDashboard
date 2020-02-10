@@ -1,2 +1,14 @@
 
 // Variables
+$breadcrumb-divider: "\f054";
+.breadcrumb-item+.breadcrumb-item::before{
+  font-family: FontAwesome;
+  content: $breadcrumb-divider;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}

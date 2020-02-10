@@ -1,56 +1,60 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/54d63eee24.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="css/main.css">
-    <title>Bootstrap Dashboard</title>
-  </head>
-  <body>
-    
-      <div class="dashboard">
-        <div class="dashboard__sidebar">
-          <div class="sidebar__logo"><img src="/images/logo-primary.svg" alt="logo"></div>
-          <div class="sidebar__user-profile">
-            <div class="user-profile__avatar">
-              <img src="/images/avatar-1.jpg" alt="avatar">
-              <span class="status"></span>
-            </div>
-            <h3 id="settings-toggle" style="color: white;">Jane Doe<i class="fas fa-chevron-down"></i></h3>
-            <div class="settings">
-              <div class="settings__item settings__item--head">
-                <p>C. Malkovich</p>
-              </div>
-              <div class="settings__item">
-                <a href="">My Profile</a>
-              </div>
-              <div class="settings__item">
-                <a href="">Account Settings</a>
-              </div>
-              <div class="settings__item">
-                <a href="">Support</a>
-              </div>
-              <div class="settings__item">
-                <a href="">Billing</a>
-              </div>
-              <div class="settings__item settings__item--footer">
-                <a href=""><i class="fas fa-sign-out-alt" style="margin-right: .3em;"></i>Sign Out</a>
-              </div>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/54d63eee24.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <title>Bootstrap Dashboard</title>
+</head>
+
+<body>
+
+  <div class="dashboard">
+    <div class="dashboard__sidebar">
+      <div class="sidebar__logo"><img src="/images/logo-primary.svg" alt="logo"></div>
+      <div class="sidebar__user-profile">
+        <div class="user-profile__avatar">
+          <img src="/images/avatar-1.jpg" alt="avatar">
+          <span class="status"></span>
+        </div>
+        <h3 id="settings-toggle" style="color: white;">Jane Doe<i class="fas fa-chevron-down"></i></h3>
+        <div class="settings">
+          <div class="settings__item settings__item--head">
+            <p>C. Malkovich</p>
           </div>
-          <h6>Head of design</h6>
-          <nav>
-            <div class="accordion" id="nav">
+          <div class="settings__item">
+            <a href="">My Profile</a>
+          </div>
+          <div class="settings__item">
+            <a href="">Account Settings</a>
+          </div>
+          <div class="settings__item">
+            <a href="">Support</a>
+          </div>
+          <div class="settings__item">
+            <a href="">Billing</a>
+          </div>
+          <div class="settings__item settings__item--footer">
+            <a href=""><i class="fas fa-sign-out-alt" style="margin-right: .3em;"></i>Sign Out</a>
+          </div>
+        </div>
+        <h6>Head of design</h6>
+        <nav>
+          <div class="accordion" id="nav">
             <div class="card">
               <div class="card-header active" id="headingOne">
                 <h2 class="active">
-                  <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
                     <i class="fas fa-home"></i>Dashboards<i class="fas fa-angle-down"></i>
                   </button>
                 </h2>
               </div>
-          
+
               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
                 <div class="card-body active">
                   <ul>
@@ -65,21 +69,23 @@
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h2>
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
                     <i class="fas fa-th"></i>Widgets<i class="fas fa-angle-down"></i>
                   </button>
                 </h2>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#nav">
                 <div class="card-body">
-                   
+
                 </div>
               </div>
             </div>
             <div class="card">
               <div class="card-header" id="headingThree">
                 <h2>
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
                     <i class="fas fa-stop"></i>Cards<i class="fas fa-angle-down"></i>
                   </button>
                 </h2>
@@ -96,12 +102,13 @@
             <div class="card">
               <div class="card-header" id="headingFour">
                 <h2>
-                  <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFour"
+                    aria-expanded="true" aria-controls="collapseFour">
                     <i class="fas fa-chart-line"></i>Graph<i class="fas fa-angle-down"></i>
                   </button>
                 </h2>
               </div>
-          
+
               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#nav">
                 <div class="card-body">
                   <ul>
@@ -113,7 +120,8 @@
             <div class="card">
               <div class="card-header" id="headingFive">
                 <h2>
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
+                    aria-expanded="false" aria-controls="collapseFive">
                     <i class="fas fa-columns"></i>Layout<i class="fas fa-angle-down"></i>
                   </button>
                 </h2>
@@ -131,7 +139,8 @@
             <div class="card">
               <div class="card-header" id="headingSix">
                 <h2>
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix"
+                    aria-expanded="false" aria-controls="collapseSix">
                     <i class="fas fa-toggle-on"></i>Interface<i class="fas fa-angle-down"></i>
                   </button>
                 </h2>
@@ -148,27 +157,641 @@
               </div>
             </div>
           </div>
-        
-            
-          </nav>
-          
-        </div>
-        <div class="footer">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cumque magnam error. Quisquam porro beatae provident vel aliquid quo hic blanditiis voluptates, voluptate dolor enim amet eos accusamus quos id!</p>
-        </div>
-          </div>
-          
-  
-  
-        <div class="dashboard__content"></div>
+        </nav>
       </div>
-      
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
-  </body>
+      <div class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cumque magnam error. Quisquam porro beatae
+          provident vel aliquid quo hic blanditiis voluptates, voluptate dolor enim amet eos accusamus quos id!</p>
+      </div>
+    </div>
+
+    <div class="dashboard__content">
+      <div class="dashboard__content__top-bar">
+        <div class="menu-toggle">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="bread-crumbs">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+              <li class="breadcrumb-item"><a href="#">Start</a></li>
+              <li class="breadcrumb-item active" aria-current="page">System</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="notifications">
+          <div class="icon">
+            <i class="far fa-bell"></i>
+          </div>
+          <div class="icon">
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-power-off"></i>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard__content__monitor">
+        <p class="heading">System</p>
+        <div class="monitor">
+          <div class="card">
+            <div class="top">
+              <div class="left">
+                <div class="info-sup">
+                  <span class="badge badge-primary">12%</span>
+                </div>
+                <div class="info-sub">
+                  <h6>Memory</h6>
+                  <div class="number">
+                    25%
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <svg class="peity" height="84" width="84">
+                  <path
+                    d="M 42 0 A 42 42 0 1 1 23.77688295706256 79.8406924519016 L 26.814069130885468 73.53391037658467 A 35 35 0 1 0 42 7"
+                    data-value="4" fill="#1EB7FF"></path>
+                  <path
+                    d="M 23.77688295706256 79.8406924519016 A 42 42 0 0 1 41.99999999999999 0 L 41.99999999999999 7 A 35 35 0 0 0 26.814069130885468 73.53391037658467"
+                    data-value="3" fill="#E9ECEF"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="bottom">
+              <svg class="peity" height="60" width="200">
+                <rect data-value="3" fill="#E9ECEF" x="0.6673076923076924" y="42" width="5.338461538461539" height="18">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="7.340384615384616" y="48" width="5.338461538461537" height="12">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="14.01346153846154" y="30" width="5.3384615384615355" height="30">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="20.68653846153846" y="6" width="5.338461538461537" height="54">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="27.35961538461538" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="34.0326923076923" y="0" width="5.3384615384615515" height="60">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="40.70576923076923" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="47.37884615384615" y="6" width="5.3384615384615515" height="54">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="54.051923076923075" y="36" width="5.338461538461544" height="24">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="60.724999999999994" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="67.39807692307691" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="74.07115384615385" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="80.74423076923077" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="87.41730769230769" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="94.09038461538461" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="100.76346153846154" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="107.43653846153848" y="6" width="5.338461538461516" height="54">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="114.1096153846154" y="42" width="5.338461538461516" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="120.78269230769232" y="24" width="5.338461538461516" height="36">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="127.45576923076925" y="48" width="5.338461538461502" height="12">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="134.12884615384615" y="18" width="5.33846153846153" height="42">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="140.8019230769231" y="30" width="5.338461538461502" height="30">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="147.47500000000002" y="54" width="5.338461538461502" height="6">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="154.14807692307693" y="48" width="5.33846153846153" height="12">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="160.82115384615386" y="0" width="5.338461538461502" height="60">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="167.4942307692308" y="36" width="5.338461538461502" height="24">
+                </rect>
+              </svg>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <div class="left">
+                <div class="info-sup">
+                  <span class="badge badge-primary">12%</span>
+                </div>
+                <div class="info-sub">
+                  <h6>Memory</h6>
+                  <div class="number">
+                    25%
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <svg class="peity" height="84" width="84">
+                  <path
+                    d="M 42 0 A 42 42 0 1 1 23.77688295706256 79.8406924519016 L 26.814069130885468 73.53391037658467 A 35 35 0 1 0 42 7"
+                    data-value="4" fill="#1EB7FF"></path>
+                  <path
+                    d="M 23.77688295706256 79.8406924519016 A 42 42 0 0 1 41.99999999999999 0 L 41.99999999999999 7 A 35 35 0 0 0 26.814069130885468 73.53391037658467"
+                    data-value="3" fill="#E9ECEF"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="bottom">
+              <svg class="peity" height="60" width="200">
+                <rect data-value="3" fill="#E9ECEF" x="0.6673076923076924" y="42" width="5.338461538461539" height="18">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="7.340384615384616" y="48" width="5.338461538461537" height="12">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="14.01346153846154" y="30" width="5.3384615384615355" height="30">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="20.68653846153846" y="6" width="5.338461538461537" height="54">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="27.35961538461538" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="34.0326923076923" y="0" width="5.3384615384615515" height="60">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="40.70576923076923" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="47.37884615384615" y="6" width="5.3384615384615515" height="54">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="54.051923076923075" y="36" width="5.338461538461544" height="24">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="60.724999999999994" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="67.39807692307691" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="74.07115384615385" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="80.74423076923077" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="87.41730769230769" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="94.09038461538461" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="100.76346153846154" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="107.43653846153848" y="6" width="5.338461538461516" height="54">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="114.1096153846154" y="42" width="5.338461538461516" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="120.78269230769232" y="24" width="5.338461538461516" height="36">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="127.45576923076925" y="48" width="5.338461538461502" height="12">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="134.12884615384615" y="18" width="5.33846153846153" height="42">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="140.8019230769231" y="30" width="5.338461538461502" height="30">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="147.47500000000002" y="54" width="5.338461538461502" height="6">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="154.14807692307693" y="48" width="5.33846153846153" height="12">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="160.82115384615386" y="0" width="5.338461538461502" height="60">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="167.4942307692308" y="36" width="5.338461538461502" height="24">
+                </rect>
+              </svg>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <div class="left">
+                <div class="info-sup">
+                  <span class="badge badge-primary">12%</span>
+                </div>
+                <div class="info-sub">
+                  <h6>Memory</h6>
+                  <div class="number">
+                    25%
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <svg class="peity" height="84" width="84">
+                  <path
+                    d="M 42 0 A 42 42 0 1 1 23.77688295706256 79.8406924519016 L 26.814069130885468 73.53391037658467 A 35 35 0 1 0 42 7"
+                    data-value="4" fill="#1EB7FF"></path>
+                  <path
+                    d="M 23.77688295706256 79.8406924519016 A 42 42 0 0 1 41.99999999999999 0 L 41.99999999999999 7 A 35 35 0 0 0 26.814069130885468 73.53391037658467"
+                    data-value="3" fill="#E9ECEF"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="bottom">
+              <svg class="peity" height="60" width="200">
+                <rect data-value="3" fill="#E9ECEF" x="0.6673076923076924" y="42" width="5.338461538461539" height="18">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="7.340384615384616" y="48" width="5.338461538461537" height="12">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="14.01346153846154" y="30" width="5.3384615384615355" height="30">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="20.68653846153846" y="6" width="5.338461538461537" height="54">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="27.35961538461538" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="34.0326923076923" y="0" width="5.3384615384615515" height="60">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="40.70576923076923" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="47.37884615384615" y="6" width="5.3384615384615515" height="54">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="54.051923076923075" y="36" width="5.338461538461544" height="24">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="60.724999999999994" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="67.39807692307691" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="74.07115384615385" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="80.74423076923077" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="87.41730769230769" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="94.09038461538461" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="100.76346153846154" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="107.43653846153848" y="6" width="5.338461538461516" height="54">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="114.1096153846154" y="42" width="5.338461538461516" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="120.78269230769232" y="24" width="5.338461538461516" height="36">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="127.45576923076925" y="48" width="5.338461538461502" height="12">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="134.12884615384615" y="18" width="5.33846153846153" height="42">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="140.8019230769231" y="30" width="5.338461538461502" height="30">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="147.47500000000002" y="54" width="5.338461538461502" height="6">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="154.14807692307693" y="48" width="5.33846153846153" height="12">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="160.82115384615386" y="0" width="5.338461538461502" height="60">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="167.4942307692308" y="36" width="5.338461538461502" height="24">
+                </rect>
+              </svg>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <div class="left">
+                <div class="info-sup">
+                  <span class="badge badge-primary">12%</span>
+                </div>
+                <div class="info-sub">
+                  <h6>Memory</h6>
+                  <div class="number">
+                    25%
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <svg class="peity" height="84" width="84">
+                  <path
+                    d="M 42 0 A 42 42 0 1 1 23.77688295706256 79.8406924519016 L 26.814069130885468 73.53391037658467 A 35 35 0 1 0 42 7"
+                    data-value="4" fill="#1EB7FF"></path>
+                  <path
+                    d="M 23.77688295706256 79.8406924519016 A 42 42 0 0 1 41.99999999999999 0 L 41.99999999999999 7 A 35 35 0 0 0 26.814069130885468 73.53391037658467"
+                    data-value="3" fill="#E9ECEF"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="bottom">
+              <svg class="peity" height="60" width="200">
+                <rect data-value="3" fill="#E9ECEF" x="0.6673076923076924" y="42" width="5.338461538461539" height="18">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="7.340384615384616" y="48" width="5.338461538461537" height="12">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="14.01346153846154" y="30" width="5.3384615384615355" height="30">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="20.68653846153846" y="6" width="5.338461538461537" height="54">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="27.35961538461538" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="34.0326923076923" y="0" width="5.3384615384615515" height="60">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="40.70576923076923" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="47.37884615384615" y="6" width="5.3384615384615515" height="54">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="54.051923076923075" y="36" width="5.338461538461544" height="24">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="60.724999999999994" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="67.39807692307691" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="74.07115384615385" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="80.74423076923077" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="87.41730769230769" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="94.09038461538461" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="100.76346153846154" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="107.43653846153848" y="6" width="5.338461538461516" height="54">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="114.1096153846154" y="42" width="5.338461538461516" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="120.78269230769232" y="24" width="5.338461538461516" height="36">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="127.45576923076925" y="48" width="5.338461538461502" height="12">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="134.12884615384615" y="18" width="5.33846153846153" height="42">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="140.8019230769231" y="30" width="5.338461538461502" height="30">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="147.47500000000002" y="54" width="5.338461538461502" height="6">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="154.14807692307693" y="48" width="5.33846153846153" height="12">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="160.82115384615386" y="0" width="5.338461538461502" height="60">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="167.4942307692308" y="36" width="5.338461538461502" height="24">
+                </rect>
+              </svg>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <div class="left">
+                <div class="info-sup">
+                  <span class="badge badge-primary">12%</span>
+                </div>
+                <div class="info-sub">
+                  <h6>Memory</h6>
+                  <div class="number">
+                    25%
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <svg class="peity" height="84" width="84">
+                  <path
+                    d="M 42 0 A 42 42 0 1 1 23.77688295706256 79.8406924519016 L 26.814069130885468 73.53391037658467 A 35 35 0 1 0 42 7"
+                    data-value="4" fill="#1EB7FF"></path>
+                  <path
+                    d="M 23.77688295706256 79.8406924519016 A 42 42 0 0 1 41.99999999999999 0 L 41.99999999999999 7 A 35 35 0 0 0 26.814069130885468 73.53391037658467"
+                    data-value="3" fill="#E9ECEF"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="bottom">
+              <svg class="peity" height="60" width="200">
+                <rect data-value="3" fill="#E9ECEF" x="0.6673076923076924" y="42" width="5.338461538461539" height="18">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="7.340384615384616" y="48" width="5.338461538461537" height="12">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="14.01346153846154" y="30" width="5.3384615384615355" height="30">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="20.68653846153846" y="6" width="5.338461538461537" height="54">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="27.35961538461538" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="34.0326923076923" y="0" width="5.3384615384615515" height="60">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="40.70576923076923" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="47.37884615384615" y="6" width="5.3384615384615515" height="54">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="54.051923076923075" y="36" width="5.338461538461544" height="24">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="60.724999999999994" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="67.39807692307691" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="74.07115384615385" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="80.74423076923077" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="87.41730769230769" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="94.09038461538461" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="100.76346153846154" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="107.43653846153848" y="6" width="5.338461538461516" height="54">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="114.1096153846154" y="42" width="5.338461538461516" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="120.78269230769232" y="24" width="5.338461538461516" height="36">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="127.45576923076925" y="48" width="5.338461538461502" height="12">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="134.12884615384615" y="18" width="5.33846153846153" height="42">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="140.8019230769231" y="30" width="5.338461538461502" height="30">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="147.47500000000002" y="54" width="5.338461538461502" height="6">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="154.14807692307693" y="48" width="5.33846153846153" height="12">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="160.82115384615386" y="0" width="5.338461538461502" height="60">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="167.4942307692308" y="36" width="5.338461538461502" height="24">
+                </rect>
+              </svg>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <div class="left">
+                <div class="info-sup">
+                  <span class="badge badge-primary">12%</span>
+                </div>
+                <div class="info-sub">
+                  <h6>Memory</h6>
+                  <div class="number">
+                    25%
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <svg class="peity" height="84" width="84">
+                  <path
+                    d="M 42 0 A 42 42 0 1 1 23.77688295706256 79.8406924519016 L 26.814069130885468 73.53391037658467 A 35 35 0 1 0 42 7"
+                    data-value="4" fill="#1EB7FF"></path>
+                  <path
+                    d="M 23.77688295706256 79.8406924519016 A 42 42 0 0 1 41.99999999999999 0 L 41.99999999999999 7 A 35 35 0 0 0 26.814069130885468 73.53391037658467"
+                    data-value="3" fill="#E9ECEF"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="bottom">
+              <svg class="peity" height="60" width="200">
+                <rect data-value="3" fill="#E9ECEF" x="0.6673076923076924" y="42" width="5.338461538461539" height="18">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="7.340384615384616" y="48" width="5.338461538461537" height="12">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="14.01346153846154" y="30" width="5.3384615384615355" height="30">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="20.68653846153846" y="6" width="5.338461538461537" height="54">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="27.35961538461538" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="34.0326923076923" y="0" width="5.3384615384615515" height="60">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="40.70576923076923" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="47.37884615384615" y="6" width="5.3384615384615515" height="54">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="54.051923076923075" y="36" width="5.338461538461544" height="24">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="60.724999999999994" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="67.39807692307691" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="74.07115384615385" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="80.74423076923077" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="87.41730769230769" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="94.09038461538461" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="100.76346153846154" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="107.43653846153848" y="6" width="5.338461538461516" height="54">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="114.1096153846154" y="42" width="5.338461538461516" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="120.78269230769232" y="24" width="5.338461538461516" height="36">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="127.45576923076925" y="48" width="5.338461538461502" height="12">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="134.12884615384615" y="18" width="5.33846153846153" height="42">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="140.8019230769231" y="30" width="5.338461538461502" height="30">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="147.47500000000002" y="54" width="5.338461538461502" height="6">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="154.14807692307693" y="48" width="5.33846153846153" height="12">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="160.82115384615386" y="0" width="5.338461538461502" height="60">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="167.4942307692308" y="36" width="5.338461538461502" height="24">
+                </rect>
+              </svg>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <div class="left">
+                <div class="info-sup">
+                  <span class="badge badge-primary">12%</span>
+                </div>
+                <div class="info-sub">
+                  <h6>Memory</h6>
+                  <div class="number">
+                    25%
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <svg class="peity" height="84" width="84">
+                  <path
+                    d="M 42 0 A 42 42 0 1 1 23.77688295706256 79.8406924519016 L 26.814069130885468 73.53391037658467 A 35 35 0 1 0 42 7"
+                    data-value="4" fill="#1EB7FF"></path>
+                  <path
+                    d="M 23.77688295706256 79.8406924519016 A 42 42 0 0 1 41.99999999999999 0 L 41.99999999999999 7 A 35 35 0 0 0 26.814069130885468 73.53391037658467"
+                    data-value="3" fill="#E9ECEF"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="bottom">
+              <svg class="peity" height="60" width="200">
+                <rect data-value="3" fill="#E9ECEF" x="0.6673076923076924" y="42" width="5.338461538461539" height="18">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="7.340384615384616" y="48" width="5.338461538461537" height="12">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="14.01346153846154" y="30" width="5.3384615384615355" height="30">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="20.68653846153846" y="6" width="5.338461538461537" height="54">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="27.35961538461538" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="34.0326923076923" y="0" width="5.3384615384615515" height="60">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="40.70576923076923" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="47.37884615384615" y="6" width="5.3384615384615515" height="54">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="54.051923076923075" y="36" width="5.338461538461544" height="24">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="60.724999999999994" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="67.39807692307691" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="74.07115384615385" y="18" width="5.338461538461544" height="42">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="80.74423076923077" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="87.41730769230769" y="42" width="5.338461538461544" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="94.09038461538461" y="24" width="5.338461538461544" height="36">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="100.76346153846154" y="54" width="5.338461538461544" height="6">
+                </rect>
+                <rect data-value="9" fill="#E9ECEF" x="107.43653846153848" y="6" width="5.338461538461516" height="54">
+                </rect>
+                <rect data-value="3" fill="#E9ECEF" x="114.1096153846154" y="42" width="5.338461538461516" height="18">
+                </rect>
+                <rect data-value="6" fill="#E9ECEF" x="120.78269230769232" y="24" width="5.338461538461516" height="36">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="127.45576923076925" y="48" width="5.338461538461502" height="12">
+                </rect>
+                <rect data-value="7" fill="#E9ECEF" x="134.12884615384615" y="18" width="5.33846153846153" height="42">
+                </rect>
+                <rect data-value="5" fill="#E9ECEF" x="140.8019230769231" y="30" width="5.338461538461502" height="30">
+                </rect>
+                <rect data-value="1" fill="#E9ECEF" x="147.47500000000002" y="54" width="5.338461538461502" height="6">
+                </rect>
+                <rect data-value="2" fill="#E9ECEF" x="154.14807692307693" y="48" width="5.33846153846153" height="12">
+                </rect>
+                <rect data-value="10" fill="#E9ECEF" x="160.82115384615386" y="0" width="5.338461538461502" height="60">
+                </rect>
+                <rect data-value="4" fill="#E9ECEF" x="167.4942307692308" y="36" width="5.338461538461502" height="24">
+                </rect>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard__content__text">
+        <h3>Processes</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sunt optio numquam amet vel similique voluptas eos ipsam repellat, reprehenderit, facilis magnam doloribus dolor sint saepe beatae dolores rem eaque!
+        Id explicabo natus, eaque sunt, laudantium nostrum velit error asperiores voluptatem consequuntur fugiat eius laborum facilis commodi, eum maiores? Qui, praesentium nobis? Doloremque excepturi dolorum, modi quo architecto maxime nostrum.
+        Officiis incidunt voluptatibus rerum qui est quo earum at ab aperiam sed tenetur iste reprehenderit maxime non, commodi consectetur, eaque quasi id dicta repudiandae. Dolorum voluptatum asperiores sunt optio iste.
+        Saepe, facere velit ipsam tenetur delectus ab? Ut, rem? Harum omnis nemo inventore expedita culpa, soluta magnam, sequi, nesciunt ducimus debitis labore commodi. Culpa eligendi nulla necessitatibus provident nam voluptates?
+        Voluptas, quasi soluta autem ducimus dignissimos tempore debitis id eligendi itaque! Voluptatem temporibus deserunt ipsa reprehenderit voluptas doloribus accusantium perspiciatis cum labore hic aliquid aspernatur nihil explicabo possimus, repellendus nisi.
+        Tempora ab quia, est labore natus magnam at incidunt ducimus obcaecati possimus itaque provident? Reprehenderit laborum fugiat consequuntur vitae quo qui ratione in modi illum natus, aliquam placeat eveniet non?</p>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>

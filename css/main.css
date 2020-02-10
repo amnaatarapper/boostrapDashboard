@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6921,26 +6922,37 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.breadcrumb-item + .breadcrumb-item::before {
+  font-family: FontAwesome;
+  content: ""; }
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  color: white; }
+  font-size: 16px;
+  background-color: #f8f9fa; }
 
 .dashboard {
   width: 100vw;
   display: flex;
+  flex-direction: row;
   color: #868e96; }
   .dashboard__sidebar {
     position: fixed;
-    width: 19.5%;
-    padding: 0 1.25rem;
+    width: 19.5vw;
+    padding: 0 20px;
     padding-bottom: 100%;
     background-color: #3e4551; }
     .dashboard__sidebar .sidebar__logo {
       margin: 1em 0;
       font-weight: 600;
-      font-size: 1.5rem;
-      line-height: 1.8125rem;
+      font-size: 24px;
+      line-height: 29px;
       color: #1eb7ff; }
     .dashboard__sidebar .sidebar__user-profile {
       position: relative;
@@ -6948,31 +6960,31 @@ body {
       margin-bottom: 4em; }
       .dashboard__sidebar .sidebar__user-profile .user-profile__avatar {
         position: relative;
-        margin-bottom: 1.25rem; }
+        margin-bottom: 20px; }
         .dashboard__sidebar .sidebar__user-profile .user-profile__avatar img {
           border-radius: 50%;
-          width: 3.75rem;
-          height: 3.75rem; }
+          width: 60px;
+          height: 60px; }
         .dashboard__sidebar .sidebar__user-profile .user-profile__avatar .status {
           position: absolute;
-          left: 3.125rem;
-          bottom: 0.3125rem;
-          width: 0.9375rem;
-          height: 0.9375rem;
+          left: 50px;
+          bottom: 5px;
+          width: 15px;
+          height: 15px;
           background-color: green;
-          border: 0.1875rem solid #3e4551;
+          border: 3px solid #3e4551;
           border-radius: 50%; }
       .dashboard__sidebar .sidebar__user-profile h3 {
         font-weight: 400;
-        font-size: 0.875rem;
-        line-height: 1.3125rem; }
+        font-size: 14px;
+        line-height: 21px; }
         .dashboard__sidebar .sidebar__user-profile h3 i {
-          font-size: 0.625rem;
-          margin-left: 0.625rem;
+          font-size: 10px;
+          margin-left: 10px;
           color: inherit; }
       .dashboard__sidebar .sidebar__user-profile .settings {
         position: absolute;
-        border-radius: 0.3125rem;
+        border-radius: 5px;
         transition: transform .2s, opacity .2s;
         transform-origin: top left;
         transform: scale(0);
@@ -6980,10 +6992,10 @@ body {
         display: flex;
         flex-direction: column;
         text-align: baseline;
-        border: 0.0625rem solid #DEE2E6;
+        border: 1px solid #DEE2E6;
         font-weight: 400;
-        font-size: 0.875rem;
-        line-height: 1.375rem; }
+        font-size: 14px;
+        line-height: 22px; }
         .dashboard__sidebar .sidebar__user-profile .settings__item {
           display: block;
           width: 100%;
@@ -6999,12 +7011,12 @@ body {
               color: #000;
               background-color: #ebeef0; }
         .dashboard__sidebar .sidebar__user-profile .settings__item--head {
-          border-bottom: 0.0625rem solid #DEE2E6;
+          border-bottom: 1px solid #DEE2E6;
           padding: 0.7em 2em .7em 2em; }
         .dashboard__sidebar .sidebar__user-profile .settings__item--footer {
-          border-top: 0.0625rem solid #DEE2E6; }
+          border-top: 1px solid #DEE2E6; }
       .dashboard__sidebar .sidebar__user-profile .settings--open {
-        border-radius: 0.3125rem;
+        border-radius: 5px;
         color: #3e4551;
         background: white;
         transform: scale(1);
@@ -7012,15 +7024,15 @@ body {
         z-index: 99; }
       .dashboard__sidebar .sidebar__user-profile h6 {
         font-weight: 400;
-        font-size: 0.75rem;
-        line-height: 1.1875rem;
+        font-size: 12px;
+        line-height: 19px;
         color: inherit;
         position: static; }
       .dashboard__sidebar .sidebar__user-profile nav {
         width: 100%;
         height: 33vh;
         overflow: scroll;
-        transform: translateX(-1.25rem); }
+        transform: translateX(-20px); }
         .dashboard__sidebar .sidebar__user-profile nav .accordion .card {
           background-color: transparent;
           border: none; }
@@ -7029,14 +7041,14 @@ body {
             border-bottom: none;
             padding: 0; }
             .dashboard__sidebar .sidebar__user-profile nav .accordion .card .card-header.active {
-              border-left: 3px solid lightblue; }
+              border-left: 0.1875rem solid lightblue; }
             .dashboard__sidebar .sidebar__user-profile nav .accordion .card .card-header h2 {
               color: inherit;
               margin-left: 1em; }
               .dashboard__sidebar .sidebar__user-profile nav .accordion .card .card-header h2 .btn {
                 font-weight: 400;
-                font-size: 0.875rem;
-                line-height: 1.375rem;
+                font-size: 14px;
+                line-height: 22px;
                 color: inherit;
                 padding: 0; }
                 .dashboard__sidebar .sidebar__user-profile nav .accordion .card .card-header h2 .btn i {
@@ -7049,7 +7061,7 @@ body {
               .dashboard__sidebar .sidebar__user-profile nav .accordion .card .card-header h2:hover {
                 color: white; }
           .dashboard__sidebar .sidebar__user-profile nav .accordion .card .card-body {
-            padding: 0.625rem 0;
+            padding: 10px 0;
             margin: 0;
             color: inherit; }
             .dashboard__sidebar .sidebar__user-profile nav .accordion .card .card-body ul {
@@ -7058,12 +7070,12 @@ body {
               padding-inline-start: 0; }
               .dashboard__sidebar .sidebar__user-profile nav .accordion .card .card-body ul li {
                 font-weight: 400;
-                font-size: 0.875rem;
-                line-height: 1.375rem;
-                padding: 0.3125rem 0; }
+                font-size: 14px;
+                line-height: 22px;
+                padding: 5px 0; }
                 .dashboard__sidebar .sidebar__user-profile nav .accordion .card .card-body ul li.active {
-                  border-left: 3px solid lightblue;
-                  margin-left: calc(3em -3px); }
+                  border-left: 0.1875rem solid lightblue;
+                  margin-left: calc(3em -0.1875rem); }
                 .dashboard__sidebar .sidebar__user-profile nav .accordion .card .card-body ul li a {
                   margin-left: 3em;
                   color: inherit;
@@ -7072,13 +7084,102 @@ body {
                     color: white; }
     .dashboard__sidebar .footer {
       position: fixed;
-      bottom: 20px;
+      bottom: 1.25rem;
       left: 0;
       width: 19.5vw;
-      padding: 0 1.5rem;
+      padding: 0 24px;
       font-weight: 400;
-      font-size: 12px;
-      line-height: 19px; }
+      font-size: 0.75rem;
+      line-height: 1.1875rem; }
   .dashboard__content {
-    width: 80.5%;
-    background-color: #f8f9fa; }
+    width: 80.5vw;
+    margin-left: 19.5vw;
+    overflow: hidden; }
+    .dashboard__content__top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 10vh;
+      text-align: center; }
+      .dashboard__content__top-bar .menu-toggle {
+        width: 5%; }
+      .dashboard__content__top-bar .bread-crumbs {
+        width: 85%;
+        padding: 0; }
+        .dashboard__content__top-bar .bread-crumbs .breadcrumb {
+          font-weight: 400;
+          font-size: 0.875rem;
+          line-height: 1.375rem;
+          padding: 0;
+          margin-bottom: 0;
+          background-color: transparent; }
+          .dashboard__content__top-bar .bread-crumbs .breadcrumb-item a {
+            text-decoration: none;
+            color: #1f2d3d; }
+      .dashboard__content__top-bar .notifications {
+        width: 10%;
+        display: inline-flex;
+        justify-content: space-evenly;
+        flex: 1; }
+    .dashboard__content__monitor {
+      margin: 0 1rem;
+      width: 90%;
+      margin-bottom: 2rem;
+      margin-left: 3rem; }
+      .dashboard__content__monitor .heading {
+        font-weight: 100;
+        font-size: 3.125rem;
+        line-height: 3.75rem;
+        color: #353c48;
+        margin-bottom: 1.5em; }
+      .dashboard__content__monitor .monitor {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 97%; }
+        .dashboard__content__monitor .monitor .card {
+          width: 12.5rem;
+          height: 12.5rem;
+          flex: 0 0 auto;
+          margin-right: 24px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          background-color: white; }
+          .dashboard__content__monitor .monitor .card .top {
+            margin: 0 auto;
+            margin-top: 1em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center; }
+            .dashboard__content__monitor .monitor .card .top .left .info-sub {
+              color: #1f2d3d; }
+              .dashboard__content__monitor .monitor .card .top .left .info-sub .h6 {
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 1.375rem; }
+              .dashboard__content__monitor .monitor .card .top .left .info-sub .number {
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 2.375rem; }
+            .dashboard__content__monitor .monitor .card .top .right {
+              margin-left: 16px; }
+    .dashboard__content__text {
+      margin: 0 1rem;
+      width: 90%;
+      margin-bottom: 2rem;
+      margin-left: 3rem; }
+      .dashboard__content__text h3 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #353c48; }
+      .dashboard__content__text p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #8493a5; }
