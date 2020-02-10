@@ -4,10 +4,165 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/54d63eee24.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="css/main.css">
     <title>Bootstrap Dashboard</title>
   </head>
   <body>
+    
+      <div class="dashboard">
+        <div class="dashboard__sidebar">
+          <div class="sidebar__logo"><img src="/images/logo-primary.svg" alt="logo"></div>
+          <div class="sidebar__user-profile">
+            <div class="user-profile__avatar">
+              <img src="/images/avatar-1.jpg" alt="avatar">
+              <span class="status"></span>
+            </div>
+            <h3 id="settings-toggle" style="color: white;">Jane Doe<i class="fas fa-chevron-down"></i></h3>
+            <div class="settings">
+              <div class="settings__item settings__item--head">
+                <p>C. Malkovich</p>
+              </div>
+              <div class="settings__item">
+                <a href="">My Profile</a>
+              </div>
+              <div class="settings__item">
+                <a href="">Account Settings</a>
+              </div>
+              <div class="settings__item">
+                <a href="">Support</a>
+              </div>
+              <div class="settings__item">
+                <a href="">Billing</a>
+              </div>
+              <div class="settings__item settings__item--footer">
+                <a href=""><i class="fas fa-sign-out-alt" style="margin-right: .3em;"></i>Sign Out</a>
+              </div>
+          </div>
+          <h6>Head of design</h6>
+          <nav>
+            <div class="accordion" id="nav">
+            <div class="card">
+              <div class="card-header active" id="headingOne">
+                <h2 class="active">
+                  <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-home"></i>Dashboards<i class="fas fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
+                <div class="card-body active">
+                  <ul>
+                    <li><a href="#">Project</a></li>
+                    <li class="active"><a href="#">System</a></li>
+                    <li><a href="#">Monitor</a></li>
+                    <li><a href="#">Reports</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2>
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fas fa-th"></i>Widgets<i class="fas fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#nav">
+                <div class="card-body">
+                   
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2>
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fas fa-stop"></i>Cards<i class="fas fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#nav">
+                <div class="card-body">
+                  <ul>
+                    <li><a href="#">Cards</a></li>
+                    <li><a href="#">Cards Header</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2>
+                  <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <i class="fas fa-chart-line"></i>Graph<i class="fas fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#nav">
+                <div class="card-body">
+                  <ul>
+                    <li><a href="#">Highcharts</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2>
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <i class="fas fa-columns"></i>Layout<i class="fas fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#nav">
+                <div class="card-body">
+                  <ul>
+                    <li><a href="#">Navbar</a></li>
+                    <li><a href="#">Sidebar</a></li>
+                    <li><a href="#">Navbar with Sidebar</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h2>
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <i class="fas fa-toggle-on"></i>Interface<i class="fas fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#nav">
+                <div class="card-body">
+                  <ul>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">System</a></li>
+                    <li><a href="#">Monitor</a></li>
+                    <li><a href="#">Reports</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+            
+          </nav>
+          
+        </div>
+        <div class="footer">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cumque magnam error. Quisquam porro beatae provident vel aliquid quo hic blanditiis voluptates, voluptate dolor enim amet eos accusamus quos id!</p>
+        </div>
+          </div>
+          
+  
+  
+        <div class="dashboard__content"></div>
+      </div>
+      
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

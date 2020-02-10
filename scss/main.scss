@@ -1,9 +1,197 @@
 // Required
 @import "bootstrap/scss/bootstrap";
-html {
-    box-sizing: border-box;
+@import "scss/_vars";
+@import "scss/_mixins";
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: white;
 }
-html, body {
-    margin: 0;
-    padding: 0;  
+.dashboard {
+    width: 100vw;
+    display:flex;
+    color: #868e96;
+    &__sidebar {
+        position: fixed;
+        width: 19.5%;
+        padding: 0 1.25rem;
+        padding-bottom: 100%;
+        background-color: #3e4551;
+        .sidebar__logo {
+            margin: 1em 0;
+            @include font(600, 1.5rem, 1.8125rem);
+            color: #1eb7ff;
+        }
+        .sidebar__user-profile {
+            position: relative;
+            text-align: left;
+            margin-bottom: 4em;
+            .user-profile__avatar {
+                position: relative;
+                margin-bottom: 1.25rem;
+                img {
+                    border-radius: 50%;
+                    width: 3.75rem;
+                    height: 3.75rem;
+                }
+                .status {
+                    position: absolute;
+                    left: 3.125rem;
+                    bottom: 0.3125rem;
+                    width: 0.9375rem;
+                    height: 0.9375rem;
+                    background-color: green;
+                    border: 0.1875rem solid #3e4551;
+                    border-radius: 50%;
+                }
+            }
+            h3 {
+                @include font(400, 0.875rem, 1.3125rem);
+                i {
+                    font-size: 0.625rem; 
+                    margin-left: 0.625rem;
+                    color: inherit;
+                }
+            }
+            .settings {
+                position: absolute;
+                border-radius: 0.3125rem;
+                transition: transform .2s, opacity .2s;
+                transform-origin: top left;
+                transform: scale(0);
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                text-align: baseline;
+                border: 0.0625rem solid #DEE2E6;
+                @include font(400, 0.875rem, 1.375rem);           ;
+                &__item {
+                    display: block;
+                    width: 100%;
+                    color: #8493A5;
+                    p {
+                        margin: 0;
+                    }
+                    a {
+                        display: block;
+                        padding: 0.7em 2em .7em 2em;
+                        text-decoration: none;
+                        color: #8493A5;
+                        &:hover {
+                            color: #000;
+                            background-color: lighten($color: #8493A5, $amount: 35);
+                        }
+                    }
+                }
+                &__item--head {
+                    border-bottom: 0.0625rem solid #DEE2E6;
+                    padding: 0.7em 2em .7em 2em;
+                }
+                &__item--footer {
+                    border-top: 0.0625rem solid #DEE2E6;
+                }
+            }
+            .settings--open {
+                border-radius: 0.3125rem;
+                color: #3e4551;
+                background: white;
+                transform: scale(1); 
+                opacity: 1;
+                z-index: 99;
+            }
+            h6 {
+                @include font(400, 0.75rem, 1.1875rem);
+                color: inherit;
+                position: static;
+            }
+
+            nav {
+                width: 100%;
+                height: 33vh;
+                overflow: scroll;
+                transform: translateX(-1.25rem);
+                .accordion {
+                    .card {
+                        background-color: transparent;
+                        border: none;
+                        .card-header {
+                            background-color: transparent;
+                            border-bottom: none;
+                            padding: 0;
+                            &.active {
+                                border-left: 3px solid lightblue;
+                            }
+                            h2 {
+                                color: inherit;
+                                margin-left: 1em;
+                                .btn {
+                                    @include font(400, 0.875rem, 1.375rem);
+                                    color: inherit;
+                                    padding: 0;
+                                    i {
+                                        margin-right: .7em;
+                                        font-size: 0.875em;
+                                        line-height: 0.875em;                                
+                                    }
+                                    .fas.fa-angle-down {
+                                        margin-left: 2em;
+                                        font-size: 0.875em;
+                                    }
+                                }
+                                &:hover {
+                                    color: white;
+                                }
+                            }
+                             
+                        }
+                        .card-body {
+                            padding: 0.625rem 0;
+                            margin: 0;
+                            color: inherit;
+                            
+                            ul {
+                                list-style: none;
+                                margin-bottom: 0;
+                                padding-inline-start: 0;
+                                li {
+                                    @include font(400, 0.875rem, 1.375rem);
+                                    padding: 0.3125rem 0;
+                                    &.active {
+                                        border-left: 3px solid lightblue;
+                                        margin-left: calc(3em -3px);
+                                    }
+                                    a {
+                                        margin-left: 3em;
+                                        color: inherit;
+                                        text-decoration: none;
+                                        &:hover,&:active {
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            
+            }
+
+       
+    }  
+    .footer {
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+        width: 19.5vw;
+        padding: 0 1.5rem;
+        @include font(400, 12px, 19px);
+    }    
+    } 
+
+    &__content {
+        width: 80.5%;
+        background-color: #f8f9fa;
+    }     
 }
