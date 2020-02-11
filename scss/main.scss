@@ -287,7 +287,8 @@ body {
                 color: #8493a5;
             }
         }
-        
-
+        &__table {
+            @include wrapper;
+        } 
     }     
 }
